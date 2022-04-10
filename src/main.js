@@ -5,6 +5,7 @@ import store from './store'
 import '@/styles/index.less'  //引入全局样式
 import Vant from 'vant';  //引入vant
 import 'vant/lib/index.css';
+import 'amfe-flexible'  //引入lib-flexible动态设置rem的基准值
 
 Vue.use(Vant);  //挂载Vant
 
