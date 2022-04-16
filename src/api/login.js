@@ -30,3 +30,15 @@ export const getUserInfo = () =>{
         // }
     })
 }
+
+// 获取用户登录后的频道信息
+export const getUserChannels = () =>{
+    return request({
+        method : 'GET',
+        url : '/v1_0/user/channels',
+        // headers : {
+        //     // 在header中放入用户的token信息必须注意Bearer后面的空格,否则请求不能生效
+        //     Authorization : `Bearer ${store.state.user.token}`
+        // }
+    })
+}

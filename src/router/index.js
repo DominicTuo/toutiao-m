@@ -33,7 +33,23 @@ const routes = [{
         component: () => import('@/views/my'),
       }
     ]
-  }
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: () => import('@/views/search')
+  },
+  {
+    path: '/article/:articleId', //动态路由,不同的文章对应不同的路由
+    name: 'article',
+    component: () => import('@/views/article'),
+    props: true
+  },
+  {
+    path: '/userprofile', //动态路由,不同的文章对应不同的路由
+    name: 'userprofile',
+    component: () => import('@/views/user-profile'),
+  },
 ]
 
 const router = new VueRouter({

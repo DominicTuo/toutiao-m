@@ -12,7 +12,12 @@
           />
           <span class="name">{{userInfo.name}}</span>
         </div>
-        <van-button round size="mini" type="default">编辑资料</van-button>
+        <van-button
+        round
+        size="mini"
+        type="default"
+        to="/userprofile"
+        >编辑资料</van-button>
       </div>
       <div class="logined-data">
         <div class="data-item">
